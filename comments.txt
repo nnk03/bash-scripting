@@ -1,0 +1,9 @@
+" cat > filename.txt " to write input string to a file
+" cat >> filename.txt " to append input string to a file
+
+
+
+cat << kreative
+this is hello creative text
+add another line
+kreative
