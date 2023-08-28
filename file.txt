@@ -1,0 +1,2 @@
+hello world from shell
+this is a second line appended because of changing "cat > file.txt" to "cat >> file.txt"
