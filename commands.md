@@ -37,3 +37,43 @@ for multiline comments
 
 
 '''
+
+
+while declaring a variable, there must be no space
+the following is invalid
+'''
+count = 10
+'''
+
+the following is valid
+'''count=10'''
+
+
+for conditional statements, space is necessary
+for example
+'''
+if [ $count -eq 10 ]
+then
+    echo "condition is true"
+fi
+'''
+
+
+-eq for equals to
+
+
+-ne for not equals
+
+-gt greater than
+
+
+we can also use angular brackets for greater than 
+but we have to replace square brackets with double parentheses
+example
+'''
+[ count -gt 10 ]
+'''
+is same as 
+'''
+(( $count > 10 ))
+'''
