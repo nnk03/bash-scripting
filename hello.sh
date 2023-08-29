@@ -14,7 +14,7 @@ the space after the colon for multiline comments is important
 #cat >> file.txt
 
 
-
+: '
 count=100
 
 if [ $count -eq 10 ]
@@ -35,12 +35,12 @@ else
 	echo "condition is false"
 fi
 
+'
 
-
-age = 10
-if [ "$age" -gt 18 ] && [ "$age" -lt 40 ]
+age=10
+if [ $age -gt 18 ] && [ $age -lt 40 ]
 then
 	echo "satisfied"
-fi
 else
 	echo "false"
+fi
