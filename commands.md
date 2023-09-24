@@ -77,3 +77,41 @@ is same as
 '''
 (( $count > 10 ))
 '''
+'''
+age=20
+if [ $age -gt 18 ] && [ $age -lt 40 ]
+then
+	echo "satisfied"
+else
+	echo "false"
+fi
+'''
+and 
+'''
+
+age=20
+if [[ $age -gt 18 && $age -lt 40 ]]
+then
+	echo "satisfied"
+else
+	echo "false"
+fi
+'''
+and
+
+'''
+
+age=20
+if [ $age -gt 18 -a $age -lt 40 ]
+then
+	echo "satisfied"
+else
+	echo "false"
+fi
+'''
+
+are the same
+
+-a is same as &&
+-o is same as ||
+-le is same as less than or equal to 

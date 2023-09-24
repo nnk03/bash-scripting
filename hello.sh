@@ -37,10 +37,27 @@ fi
 
 '
 
-age=10
+age=20
 if [ $age -gt 18 ] && [ $age -lt 40 ]
 then
 	echo "satisfied"
 else
 	echo "false"
 fi
+
+if [[ $age -gt 18 && $age -lt 40 ]]; then
+	echo "age is greater than 18 and less than 40"
+else
+	echo "false"
+fi
+
+if [ $age -gt 18 -a $age -lt 40 ]; then
+	echo "age is greater than 18 and less than 40"
+else
+	echo "false"
+fi
+
+
+
+
+
