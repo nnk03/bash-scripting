@@ -1,9 +1,13 @@
 #!/bin/bash
 
-read ans
+read n
+ans=0
 
-if [[ ${ans,} == "y" ]]; then
-	echo "YES"
-else
-	echo "NO"
-fi
+for ((i = 0; i < n; i++)); do
+	read x
+	ans=$(($ans + $x))
+done
+
+ans=$(($ans / n))
+
+echo $ans
